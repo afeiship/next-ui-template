@@ -1,0 +1,29 @@
+{
+  "name": "next-ui-template",
+  "version": "1.0.0",
+  "description": "Mini template engine based on next toolkit.",
+  "main": "dist/Template.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/next-ui-template.git"
+  },
+  "keywords": [
+    "ajax",
+    "next"
+  ],
+  "author": "afei",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1"
+  },
+  "bugs": {
+    "url": "https://github.com/afeiship/next-ui-template/issues"
+  },
+  "homepage": "https://github.com/afeiship/next-ui-template#readme"
+}

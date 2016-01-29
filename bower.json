@@ -1,0 +1,28 @@
+{
+  "name": "next-ui-template",
+  "homepage": "https://github.com/afeiship/next-ui-template",
+  "authors": [
+    "afei"
+  ],
+  "description": "Mini template engine based on next toolkit.",
+  "main": "dist/Template.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "template",
+    "next",
+    "toolkit"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "next-js-core": "*"
+  }
+}

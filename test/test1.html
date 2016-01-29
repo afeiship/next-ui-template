@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript" src="../bower_components/next-js-core/dest/nx.core.js"></script>
+  <script type="text/javascript" src="../dist/Template.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+  //0.get template
+  var Template=nx.ui.Template;
+
+  //1.format string meets arr:
+  var arr1=['fei',100];
+  var stringTempl='I am {0},my age is {1}';
+  console.log(
+    Template.format(stringTempl,arr1)
+  );
+  //result:
+  //I am fei,my age is 100
+
+
+  //2.format string meets object:
+  var obj1={
+    name:'fei',
+    age:100
+  };
+  var stringTempl2='I am {name},my age is {age}';
+  console.log(
+    Template.format(stringTempl2,obj1)
+  );
+  //result:
+  //I am fei,my age is 100
+
+
+  //3.Template.heredoc:
+  var htmlStr=Template.heredoc(function(){/*
+    <div class="test-tmpl" id="<%=id%>">
+      <ul>
+        <% for (var i=0; i<10;i++){ %>
+        <li><%=i%></li>
+        <% } %>
+      </ul>
+    </div>
+  */});
+
+  //4.Template.compile:
+  var html=Template.compile(htmlStr,{
+    id:"test1"
+  });
+
+  console.log(html);
+
+
+
+
+</script>
+
+</body>
+</html>
